@@ -1,0 +1,107 @@
+/* Feedback section – Swiper slider, star rating */
+.feedback-swiper {
+  overflow: hidden;
+  padding-bottom: 48px;
+}
+
+.feedback__slide {
+  height: auto;
+}
+
+.feedback__card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.feedback__stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+}
+
+.feedback__star {
+  color: #e2e8f0;
+}
+
+.feedback__star--active {
+  color: #f59e0b;
+}
+
+.feedback__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0 0 16px;
+}
+
+.feedback__author {
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0;
+}
+
+.feedback__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.feedback__btn {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.feedback__btn:hover,
+.feedback__btn:focus {
+  background: #2d2d44;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.feedback__pagination {
+  position: relative !important;
+  margin: 0;
+}
+
+.feedback__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  opacity: 1;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.feedback__pagination .swiper-pagination-bullet-active {
+  background: #a78bfa;
+  transform: scale(1.2);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

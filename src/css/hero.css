@@ -1,0 +1,84 @@
+/* Hero section – full-height intro, CTA to #artists */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  z-index: -1;
+}
+
+.hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1920&q=80") center/cover no-repeat;
+  opacity: 0.15;
+  z-index: 0;
+}
+
+.hero__container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__title {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 32px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 14px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #1a1a2e;
+  background: #a78bfa;
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  background: #c4b5fd;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero__title {
+    font-size: 3.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.25rem;
+  }
+}

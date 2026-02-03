@@ -1,19 +1,29 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
+    <a class="header__logo" href="#" aria-label="ArtistsHub – go to home">ArtistsHub</a>
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
       <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="#artists">Artists</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#feedback">Feedback</a></li>
       </ul>
     </nav>
+    <button type="button" class="burger" data-burger aria-label="Open menu" aria-expanded="false">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+  <div class="burger-menu" data-burger-menu hidden>
+    <div class="burger-menu__inner">
+      <button type="button" class="burger-menu__close" data-burger-close aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="burger-menu__list">
+        <li><a class="burger-menu__link" href="#artists">Artists</a></li>
+        <li><a class="burger-menu__link" href="#about">About</a></li>
+        <li><a class="burger-menu__link" href="#feedback">Feedback</a></li>
+      </ul>
+    </div>
   </div>
 </header>
