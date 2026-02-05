@@ -1,90 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ArtistsHub – Discover Your New Favorite Artists</title>
+    <title>ArtistsHub - Discover Your New Favorite Artists</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <load src="./partials/header.html" />
 
     <main>
-      <!-- Hero Section -->
-      <section class="hero" id="hero">
-        <div class="hero-bg"></div>
-        <div class="container hero__container">
-          <h1 class="hero__title">ArtistsHub</h1>
-          <p class="hero__subtitle">Discover and explore music artists from around the world</p>
-          <a class="hero__btn button" href="#artists">Explore Artists</a>
-        </div>
-      </section>
-
-      <!-- Artists Section -->
-      <section class="artists section" id="artists">
-        <div class="container">
-          <h2 class="artists__title section-title">Artists</h2>
-          <p class="artists__subtitle">Explore Your New Favorite Artists</p>
-          <div class="artists__list" data-artists-list></div>
-          <div class="artists__load-wrap" data-load-more-wrap hidden>
-            <button type="button" class="button artists__load-more" data-load-more>Load More</button>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Us Section -->
-      <section class="about section" id="about">
-        <div class="container about__container">
-          <div class="about__media">
-            <img class="about__team-img" src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&q=80" alt="Our team" width="600" height="400" />
-            <img class="about__logo" src="https://via.placeholder.com/120x40/1a1a2e/eee?text=ArtistsHub" alt="ArtistsHub logo" width="120" height="40" />
-          </div>
-          <div class="about__content">
-            <h2 class="about__title section-title">About ArtistsHub</h2>
-            <p class="about__text">At ArtistsHub, our mission is to connect music lovers with the artists they adore. We strive to create a vibrant community where discovering new music is as enjoyable as listening to it.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Feedback Section -->
-      <section class="feedback section" id="feedback">
-        <div class="container">
-          <h2 class="visually-hidden">Feedbacks our visitors</h2>
-          <div class="swiper feedback-swiper">
-            <div class="swiper-wrapper" data-feedback-slides></div>
-            <div class="feedback__nav">
-              <button type="button" class="feedback__btn feedback__btn--prev" aria-label="Previous feedback">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-              <div class="swiper-pagination feedback__pagination"></div>
-              <button type="button" class="feedback__btn feedback__btn--next" aria-label="Next feedback">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <load src="./partials/artists.html" />
+      <load src="./partials/feedback.html" />
     </main>
 
     <load src="./partials/footer.html" />
 
     <!-- Loader overlay -->
-    <div class="loader-overlay" data-loader hidden aria-hidden="true">
+    <!-- <div class="loader-overlay" data-loader hidden aria-hidden="true">
       <div class="loader" role="status" aria-label="Loading">
         <span class="loader__spinner"></span>
       </div>
-    </div>
+    </div> -->
 
     <!-- Toast container for notifications -->
-    <div class="toast-container" data-toast-container aria-live="polite"></div>
+    <!-- <div class="toast-container" data-toast-container aria-live="polite"></div> -->
 
     <!-- Artist Details Modal -->
-    <div class="modal-backdrop" data-modal-backdrop hidden>
-      <div class="modal" data-modal role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        <button type="button" class="modal__close" data-modal-close aria-label="Close modal">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <!-- <div class="modal-backdrop" data-modal-backdrop hidden>
+      <div
+        class="modal"
+        data-modal
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          type="button"
+          class="modal__close"
+          data-modal-close
+          aria-label="Close modal"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            aria-hidden="true"
+          >
+            <path
+              d="M18 6L6 18M6 6l12 12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
         </button>
         <div class="modal__content" data-modal-content>
           <div class="modal__loader" data-modal-loader hidden>
@@ -93,9 +69,9 @@
           <div class="modal__body" data-modal-body hidden></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./main.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
